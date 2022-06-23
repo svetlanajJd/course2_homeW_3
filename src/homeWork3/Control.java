@@ -2,7 +2,6 @@ package homeWork3;
 
 public class Control {
     private static void checkLogin(User user) throws WrongLoginException, WrongPasswordException {
-
         boolean b = user.getPassword().equals(user.getConfirmPassword());
 
         if (user.getLogin().matches("[a-zA-Z\\d_]+") && (user.getLogin().length() <= 20)) {
